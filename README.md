@@ -1,46 +1,22 @@
 # wine.rchh.ca — NS Rotary Wine Fundraiser 2026
 
-Landing page for the Harvest Wines & Spirits × Rotary Nova Scotia summer fundraiser.
+A simple, single-page fundraiser site built for the **Harvest Wines & Spirits × Rotary Clubs of Nova Scotia** summer fundraiser (May 29 – June 12, 2026).
 
-## Adding Logos
+Live at: [wine.rchh.ca](https://wine.rchh.ca)
 
-Open `index.html` and find the two `<img>` tags marked with `LOGO:` comments.
+## What It Does
 
-1. Save your Rotary logo as `rotary-logo.png` in this folder, then set `src="rotary-logo.png"` on the first img.
-2. Save the Harvest Wines logo as `harvest-logo.png`, then set `src="harvest-logo.png"` on the second img.
+- Explains the fundraiser and how it works
+- Lets visitors search all 21 participating Nova Scotia Rotary clubs and copy their club's coupon code with one click
+- Shows a live countdown to the fundraiser deadline
+- Links directly to [harvestwines.ca](https://harvestwines.ca)
 
-The page will automatically show the logo and hide the text placeholder once the file loads.
+## Built With
 
-## Deploying to Cloudflare Pages
+Plain HTML, CSS, and JavaScript — no frameworks, no build step, no dependencies. Hosted on [Cloudflare Pages](https://pages.cloudflare.com).
 
-### 1. Create a GitHub repo
+## About the Fundraiser
 
-```
-git init
-git add index.html README.md
-git commit -m "Initial fundraiser page"
-git remote add origin https://github.com/YOUR_USERNAME/rchh-wine2026.git
-git push -u origin main
-```
+Customers shop at Harvest Wines & Spirits online using their Rotary club's coupon code. Each club earns 15% of pre-tax sales as a cheque in July 2026. Open to anyone in Nova Scotia — you don't need to be a Rotarian to use your club's code.
 
-### 2. Connect to Cloudflare Pages
-
-1. Log in to [dash.cloudflare.com](https://dash.cloudflare.com) → **Pages** → **Create a project**
-2. Choose **Connect to Git** → select your new repo
-3. Build settings:
-   - **Framework preset:** None
-   - **Build command:** *(leave blank)*
-   - **Build output directory:** `/`
-4. Click **Save and Deploy**
-
-### 3. Add the custom domain
-
-1. In Cloudflare Pages → your project → **Custom Domains** → **Set up a custom domain**
-2. Enter `wine.rchh.ca`
-3. Since rchh.ca is already managed in Cloudflare, the CNAME record will be created automatically.
-
-The page will be live at `https://wine.rchh.ca` within a few minutes.
-
-## Making Updates
-
-Edit `index.html`, commit, and push — Cloudflare Pages redeploys automatically within ~30 seconds.
+Questions? Contact Alex Handyside at [alexhandyside@gmail.com](mailto:alexhandyside@gmail.com).
