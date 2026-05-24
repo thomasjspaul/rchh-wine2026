@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Harvest Wines & Spirits × Rotary Clubs of Nova Scotia summer fundraiser. Find your club's coupon code and shop to support your local Rotary club — May 29 to June 12, 2026.">
+  <title>Harvest Wines × Rotary NS — Summer Fundraiser 2026</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --burgundy:      #6B2737;
+      --burgundy-dark: #4A1A25;
+      --gold:          #C9A84C;
+      --gold-light:    #E2C06E;
+      --cream:         #F5F0E8;
+      --cream-dark:    #EDE6D8;
+      --brown:         #2C1810;
+      --brown-mid:     #5C3D2E;
+      --brown-light:   #7A5842;
+      --green-ok:      #2D6A4F;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: var(--cream);
+      color: var(--brown);
+      line-height: 1.6;
+    }
+
+    /* ───────────── HEADER ───────────── */
+    .site-header {
+      background: var(--burgundy-dark);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .header-brand {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      line-height: 1.35;
+    }
+
+    .header-brand span {
+      display: block;
+      font-size: 0.65rem;
+      font-weight: 400;
+      opacity: 0.65;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .header-divider {
+      width: 1px;
+      height: 32px;
+      background: rgba(201,168,76,0.25);
+      flex-shrink: 0;
+    }
+
+    /* ───────────── HERO ───────────── */
+    .hero {
+      background: linear-gradient(155deg, var(--burgundy) 0%, var(--burgundy-dark) 100%);
+      color: var(--cream);
+      text-align: center;
+      padding: 4.5rem 1.5rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A84C' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .hero-inner { position: relative; z-index: 1; }
+
+    .hero-eyebrow {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(1.75rem, 5.5vw, 3.2rem);
+      line-height: 1.15;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--cream);
+    }
+
+    .x-mark {
+      color: var(--gold);
+      font-style: normal;
+    }
+
+    .hero-tagline {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: rgba(245,240,232,0.85);
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+
+    .date-badge {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--brown);
+      font-weight: 700;
+      padding: 0.45rem 1.3rem;
+      border-radius: 100px;
+      font-size: 0.9rem;
+      margin-bottom: 2.75rem;
+      letter-spacing: 0.03em;
+    }
+
+    .countdown-label-text {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: rgba(245,240,232,0.55);
+      margin-bottom: 0.75rem;
+    }
+
+    .countdown {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .countdown-unit {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(201,168,76,0.35);
+      border-radius: 14px;
+      padding: 1rem 1.25rem;
+      min-width: 76px;
+      text-align: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .countdown-number {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      font-family: Georgia, serif;
+      color: var(--gold);
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .countdown-unit-label {
+      display: block;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: rgba(245,240,232,0.6);
+      margin-top: 0.3rem;
+    }
+
+    .countdown-ended {
+      font-family: Georgia, serif;
+      font-size: 1.2rem;
+      color: var(--gold);
+      font-style: italic;
+      padding: 1rem;
+    }
+
+    /* ───────────── HOW IT WORKS ───────────── */
+    .how-it-works {
+      background: var(--cream-dark);
+      padding: 4.5rem 1.5rem;
+    }
+
+    .section-title {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      text-align: center;
+      color: var(--burgundy);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--brown-light);
+      margin-bottom: 3rem;
+      font-size: 0.95rem;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 1.25rem;
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    .step {
+      background: #fff;
+      border-radius: 18px;
+      padding: 1.75rem 1.25rem;
+      text-align: center;
+      box-shadow: 0 2px 16px rgba(107,39,55,0.07);
+    }
+
+    .step-number {
+      width: 42px;
+      height: 42px;
+      background: var(--burgundy);
+      color: var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      font-family: Georgia, serif;
+      margin: 0 auto 1rem;
+    }
+
+    .step h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+      color: var(--burgundy);
+    }
+
+    .step p {
+      font-size: 0.88rem;
+      color: var(--brown-light);
+      line-height: 1.55;
+    }
+
+    .step strong { color: var(--burgundy); }
+
+    /* ───────────── CODE FINDER ───────────── */
+    .code-finder {
+      padding: 4.5rem 1.5rem;
+      background: var(--cream);
+    }
+
+    .search-wrapper {
+      max-width: 620px;
+      margin: 0 auto 1.5rem;
+      position: relative;
+    }
+
+    .search-icon-svg {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      pointer-events: none;
+      color: var(--brown-light);
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.9rem 1rem 0.9rem 2.85rem;
+      font-size: 1rem;
+      border: 2px solid var(--cream-dark);
+      border-radius: 14px;
+      background: #fff;
+      color: var(--brown);
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      -webkit-appearance: none;
+    }
+
+    .search-input:focus {
+      border-color: var(--burgundy);
+      box-shadow: 0 0 0 3px rgba(107,39,55,0.1);
+    }
+
+    .search-input::placeholder { color: #9E8878; }
+
+    .clubs-list {
+      max-width: 620px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    .club-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: #fff;
+      border: 1.5px solid var(--cream-dark);
+      border-radius: 12px;
+      padding: 0.7rem 1rem;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .club-row:hover {
+      border-color: rgba(201,168,76,0.6);
+      box-shadow: 0 2px 12px rgba(107,39,55,0.06);
+    }
+
+    .club-name {
+      flex: 1;
+      font-size: 0.94rem;
+      font-weight: 500;
+    }
+
+    .club-code {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--burgundy);
+      background: var(--cream-dark);
+      padding: 0.22rem 0.6rem;
+      border-radius: 6px;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .copy-btn {
+      flex-shrink: 0;
+      background: var(--burgundy);
+      color: var(--cream);
+      border: none;
+      border-radius: 8px;
+      padding: 0.38rem 0.8rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 0.03em;
+      transition: background 0.15s, transform 0.1s;
+      white-space: nowrap;
+    }
+
+    .copy-btn:hover { background: var(--burgundy-dark); }
+    .copy-btn:active { transform: scale(0.95); }
+    .copy-btn.copied { background: var(--green-ok); }
+
+    .empty-state {
+      max-width: 620px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      color: var(--brown-light);
+      font-style: italic;
+      display: none;
+    }
+
+    /* ───────────── WHERE TO ENTER ───────────── */
+    .where-to-enter {
+      background: var(--cream-dark);
+      padding: 4rem 1.5rem;
+    }
+
+    .screenshots {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .screenshot-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.25rem 1.5rem;
+      box-shadow: 0 2px 16px rgba(107,39,55,0.07);
+    }
+
+    .screenshot-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--brown-light);
+      margin-bottom: 0.75rem;
+    }
+
+    .screenshot-label strong {
+      color: var(--burgundy);
+    }
+
+    .screenshot-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid var(--cream-dark);
+      display: block;
+    }
+
+    .screenshot-caption {
+      font-size: 0.82rem;
+      color: var(--brown-light);
+      margin-top: 0.6rem;
+      line-height: 1.5;
+    }
+
+    /* ───────────── CTA ───────────── */
+    .cta-section {
+      background: var(--burgundy);
+      padding: 3.5rem 1.5rem;
+      text-align: center;
+    }
+
+    .cta-heading {
+      font-family: Georgia, serif;
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+      color: var(--cream);
+      margin-bottom: 0.6rem;
+    }
+
+    .cta-sub {
+      color: rgba(245,240,232,0.75);
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--brown);
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 0.9rem 2.1rem;
+      border-radius: 100px;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    }
+
+    .cta-button:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0,0,0,0.3);
+    }
+
+    .cta-button:active { transform: translateY(0); }
+
+    /* ───────────── FINE PRINT ───────────── */
+    .fine-print {
+      background: var(--cream-dark);
+      padding: 4rem 1.5rem;
+    }
+
+    .fine-print-box {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 18px;
+      padding: 1.75rem 2rem;
+      border-left: 4px solid var(--gold);
+      box-shadow: 0 2px 16px rgba(107,39,55,0.06);
+    }
+
+    .fine-print-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--brown-light);
+      margin-bottom: 1.1rem;
+      font-weight: 700;
+    }
+
+    .fine-print ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+
+    .fine-print li {
+      font-size: 0.875rem;
+      color: var(--brown-mid);
+      padding-left: 1.3rem;
+      position: relative;
+      line-height: 1.55;
+    }
+
+    .fine-print li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    /* ───────────── FOOTER ───────────── */
+    footer {
+      background: var(--burgundy-dark);
+      color: var(--cream);
+      padding: 2.75rem 1.5rem;
+      text-align: center;
+    }
+
+    .footer-contact {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .footer-contact a {
+      color: var(--gold);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .footer-contact a:hover { text-decoration: underline; }
+
+    .footer-contact-sub {
+      font-size: 0.82rem;
+      opacity: 0.5;
+      margin-bottom: 1.75rem;
+    }
+
+    .footer-divider {
+      border: none;
+      border-top: 1px solid rgba(245,240,232,0.12);
+      margin: 0 auto 1.75rem;
+      max-width: 160px;
+    }
+
+    .footer-about {
+      font-size: 0.85rem;
+      opacity: 0.55;
+      max-width: 520px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.65;
+    }
+
+    .footer-bottom {
+      font-size: 0.75rem;
+      opacity: 0.35;
+    }
+
+    /* ───────────── RESPONSIVE ───────────── */
+    @media (max-width: 600px) {
+      .site-header { padding: 0.85rem 1rem; gap: 0.6rem; }
+      .header-divider { width: 40px; height: 1px; }
+      .hero { padding: 3rem 1rem 3rem; }
+      .countdown-unit { min-width: 64px; padding: 0.75rem 0.9rem; }
+      .countdown-number { font-size: 1.6rem; }
+      .steps { grid-template-columns: 1fr 1fr; }
+      .club-row { flex-wrap: wrap; }
+      .club-name { flex: 1 1 100%; font-size: 0.9rem; }
+      .fine-print-box { padding: 1.25rem 1.25rem; }
+    }
+
+    @media (max-width: 360px) {
+      .steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ════════════ HEADER ════════════ -->
+  <header class="site-header">
+    <div class="header-brand">
+      Rotary Clubs of Nova Scotia
+      <span>Community &bull; Service &bull; Fellowship</span>
+    </div>
+
+    <div class="header-divider"></div>
+
+    <div class="header-brand" style="text-align:right">
+      Harvest Wines &amp; Spirits
+      <span>harvestwines.ca</span>
+    </div>
+  </header>
+
+  <!-- ════════════ HERO ════════════ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Summer 2026 Fundraiser</p>
+      <h1>Harvest Wines &amp; Spirits<br><em class="x-mark">×</em> Rotary Clubs of Nova Scotia</h1>
+      <p class="hero-tagline">Shop your favourites. Support your club.</p>
+      <div class="date-badge">May 29 &ndash; June 12, 2026</div>
+
+      <p class="countdown-label-text" id="countdown-label-text">Fundraiser closes in</p>
+      <div class="countdown" id="countdown">
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-days">--</span>
+          <span class="countdown-unit-label">Days</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-hours">--</span>
+          <span class="countdown-unit-label">Hours</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-mins">--</span>
+          <span class="countdown-unit-label">Minutes</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-secs">--</span>
+          <span class="countdown-unit-label">Seconds</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ HOW IT WORKS ════════════ -->
+  <section class="how-it-works">
+    <h2 class="section-title">How It Works</h2>
+    <p class="section-subtitle">Four simple steps — your club earns 15% of every sale</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Find Your Code</h3>
+        <p>Search for your club below and grab your unique coupon code.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Shop at Harvest</h3>
+        <p>Browse wine, beer, spirits, cider &amp; mixers at <strong>harvestwines.ca</strong> — sale items included.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Enter at Checkout</h3>
+        <p>Apply your club's coupon code when you check out. Online orders only.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Club Earns 15%</h3>
+        <p>Your club receives a cheque in July — <strong>15%</strong> of all pre-tax sales made with its code.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ CODE FINDER ════════════ -->
+  <section class="code-finder">
+    <h2 class="section-title">Find Your Club's Code</h2>
+    <p class="section-subtitle">All 21 Nova Scotia Rotary clubs are participating — you don't need to be a member to use the code</p>
+
+    <div class="search-wrapper">
+      <svg class="search-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input
+        type="search"
+        id="club-search"
+        class="search-input"
+        placeholder="Search for your club…"
+        autocomplete="off"
+        spellcheck="false"
+        aria-label="Search Rotary clubs"
+      >
+    </div>
+
+    <div class="clubs-list" id="clubs-list" role="list"></div>
+    <p class="empty-state" id="empty-state" role="status">No clubs found &mdash; try a shorter search.</p>
+  </section>
+
+  <!-- ════════════ WHERE TO ENTER ════════════ -->
+  <section class="where-to-enter">
+    <h2 class="section-title">Where to Enter Your Code</h2>
+    <p class="section-subtitle">Two spots on the Harvest Wines website accept your coupon code</p>
+    <div class="screenshots">
+      <div class="screenshot-card">
+        <p class="screenshot-label">Option 1 &mdash; <strong>During checkout</strong></p>
+        <img src="check-out-code.png" alt="Checkout page showing 'Have a promo code? Click here to enter your promo code' link">
+        <p class="screenshot-caption">On the checkout page, click the promo code link to expand the field and enter your club's code.</p>
+      </div>
+      <div class="screenshot-card">
+        <p class="screenshot-label">Option 2 &mdash; <strong>In your cart</strong></p>
+        <img src="cart-code.png" alt="Shopping cart page showing a Coupon code field with an Apply coupon button">
+        <p class="screenshot-caption">You can also enter your code directly in the cart using the coupon code field before proceeding to checkout.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════ CTA ════════════ -->
+  <section class="cta-section">
+    <h2 class="cta-heading">Ready to shop?</h2>
+    <p class="cta-sub">Enter your club's code at checkout on the Harvest Wines website.</p>
+    <a href="https://harvestwines.ca" target="_blank" rel="noopener noreferrer" class="cta-button">
+      Shop Now at Harvest Wines &rarr;
+    </a>
+  </section>
+
+  <!-- ════════════ FINE PRINT ════════════ -->
+  <section class="fine-print">
+    <h2 class="section-title">Small Print</h2>
+    <p class="section-subtitle">A few things to keep in mind</p>
+    <div class="fine-print-box">
+      <p class="fine-print-title">Terms &amp; Conditions</p>
+      <ul>
+        <li>Your club will receive a cheque in July for <strong>15% of pre-tax sales</strong> made with its coupon code.</li>
+        <li>Credit cards must be registered to a <strong>Nova Scotia address</strong>. Delivery must also be within Nova Scotia.</li>
+        <li>Free delivery still applies; a delivery fee applies for smaller orders.</li>
+        <li>For delivery, someone <strong>19 or older</strong> must be home and present valid government-issued photo ID. If no one is available, the order returns to the store and redelivery incurs an additional charge.</li>
+        <li>Pick-up orders must be collected <strong>within 48 hours</strong> — stores have limited on-site storage.</li>
+        <li>Harvest Wines will not sell or deliver alcohol to anyone under the age of 19.</li>
+        <li>Online sales only. <strong>Not valid in-store.</strong> Applies to all products including sale items.</li>
+        <li>You do not need to be a Rotarian to use your club's code — share it freely with Nova Scotia friends, family, and neighbours!</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ════════════ FOOTER ════════════ -->
+  <footer>
+    <p class="footer-contact">
+      Questions? Email <a href="mailto:alexhandyside@gmail.com">Alex Handyside</a>
+    </p>
+    <p class="footer-contact-sub">RC Halifax Harbour &mdash; alexhandyside@gmail.com</p>
+
+    <hr class="footer-divider">
+
+    <p class="footer-about">
+      Rotary is a global network of 1.4&nbsp;million neighbours, friends, and problem&#8209;solvers.
+      The 21 Rotary clubs of Nova Scotia are proud to support their communities through
+      partnerships like this one with Harvest Wines &amp; Spirits.
+    </p>
+    <p class="footer-bottom">Fundraiser runs May 29 &ndash; June 12, 2026 &bull; wine.rchh.ca</p>
+  </footer>
+
+  <script>
+    // ── COUNTDOWN ────────────────────────────────────────────
+    var START = new Date("2026-05-29T00:01:00-03:00");
+    var END   = new Date("2026-06-12T23:59:00-03:00");
+
+    var labelEl   = document.getElementById('countdown-label-text');
+    var cdEl      = document.getElementById('countdown');
+    var cdDays    = document.getElementById('cd-days');
+    var cdHours   = document.getElementById('cd-hours');
+    var cdMins    = document.getElementById('cd-mins');
+    var cdSecs    = document.getElementById('cd-secs');
+
+    function pad(n) { return n < 10 ? '0' + n : '' + n; }
+
+    function tick() {
+      var now  = new Date();
+      var diff, target;
+
+      if (now >= END) {
+        cdEl.innerHTML = '<p class="countdown-ended">This fundraiser has ended. Thank you for your support!</p>';
+        labelEl.style.display = 'none';
+        return;
+      }
+
+      if (now < START) {
+        labelEl.textContent = 'Fundraiser opens in';
+        target = START - now;
+      } else {
+        labelEl.textContent = 'Fundraiser closes in';
+        target = END - now;
+      }
+
+      var d = Math.floor(target / 86400000);
+      var h = Math.floor((target % 86400000) / 3600000);
+      var m = Math.floor((target % 3600000)  / 60000);
+      var s = Math.floor((target % 60000)    / 1000);
+
+      cdDays.textContent  = d;
+      cdHours.textContent = pad(h);
+      cdMins.textContent  = pad(m);
+      cdSecs.textContent  = pad(s);
+    }
+
+    setInterval(tick, 1000);
+    tick();
+
+    // ── CLUBS DATA ───────────────────────────────────────────
+    var clubs = [
+      { code: "NSRotary01", name: "RC Halifax Harbour" },
+      { code: "NSRotary02", name: "RC Halifax Northwest" },
+      { code: "NSRotary03", name: "RC Yarmouth" },
+      { code: "NSRotary04", name: "RC Middleton" },
+      { code: "NSRotary05", name: "RC Kentville" },
+      { code: "NSRotary06", name: "RC New Minas Sunrise" },
+      { code: "NSRotary07", name: "RC Wolfville" },
+      { code: "NSRotary08", name: "RC Wolfville-Mud Creek" },
+      { code: "NSRotary09", name: "RC Bridgewater & District" },
+      { code: "NSRotary10", name: "RC Lunenburg" },
+      { code: "NSRotary11", name: "RC Sackville & Area" },
+      { code: "NSRotary12", name: "RC Dartmouth" },
+      { code: "NSRotary13", name: "RC Dartmouth East" },
+      { code: "NSRotary14", name: "RC Truro" },
+      { code: "NSRotary15", name: "RC Westville" },
+      { code: "NSRotary16", name: "RC Pictou" },
+      { code: "NSRotary17", name: "RC Amherst" },
+      { code: "NSRotary18", name: "RC New Waterford" },
+      { code: "NSRotary19", name: "RC Sydney" },
+      { code: "NSRotary20", name: "RC Sydney-Sunrise" },
+      { code: "NSRotary21", name: "RC Windsor" }
+    ];
+
+    // ── RENDER ───────────────────────────────────────────────
+    function esc(s) {
+      return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    function renderClubs(list) {
+      var container = document.getElementById('clubs-list');
+      var empty     = document.getElementById('empty-state');
+
+      if (list.length === 0) {
+        container.innerHTML = '';
+        empty.style.display = 'block';
+        return;
+      }
+      empty.style.display = 'none';
+      container.innerHTML = list.map(function(c) {
+        return '<div class="club-row" role="listitem">' +
+          '<span class="club-name">' + esc(c.name) + '</span>' +
+          '<span class="club-code" aria-label="Coupon code">' + esc(c.code) + '</span>' +
+          '<button class="copy-btn" data-code="' + esc(c.code) + '" aria-label="Copy code ' + esc(c.code) + '">Copy</button>' +
+        '</div>';
+      }).join('');
+    }
+
+    renderClubs(clubs);
+
+    // ── SEARCH ───────────────────────────────────────────────
+    document.getElementById('club-search').addEventListener('input', function() {
+      var q = this.value.trim().toLowerCase();
+      if (!q) { renderClubs(clubs); return; }
+      renderClubs(clubs.filter(function(c) {
+        return c.name.toLowerCase().indexOf(q) !== -1 ||
+               c.code.toLowerCase().indexOf(q) !== -1;
+      }));
+    });
+
+    // ── COPY ─────────────────────────────────────────────────
+    document.getElementById('clubs-list').addEventListener('click', function(e) {
+      var btn = e.target.closest ? e.target.closest('.copy-btn') : null;
+      if (!btn) {
+        // IE fallback
+        var t = e.target;
+        if (t && t.className && t.className.indexOf('copy-btn') !== -1) btn = t;
+      }
+      if (!btn) return;
+
+      var code = btn.getAttribute('data-code');
+
+      function showCopied() {
+        btn.textContent = 'Copied ✓';
+        btn.classList.add('copied');
+        setTimeout(function() {
+          btn.textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(showCopied).catch(function() {
+          fallbackCopy(code, btn);
+        });
+      } else {
+        fallbackCopy(code, btn);
+      }
+    });
+
+    function fallbackCopy(text, btn) {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      try {
+        document.execCommand('copy');
+        btn.textContent = 'Copied ✓';
+        btn.classList.add('copied');
+        setTimeout(function() {
+          btn.textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      } catch(e) {}
+      document.body.removeChild(ta);
+    }
+  </script>
+</body>
+</html>
